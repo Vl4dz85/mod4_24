@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="Payment">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <jta-data-source>jdbc/payment</jta-data-source>
+        <class>models.AbonentsEntity</class>
+        <class>models.AddressesEntity</class>
+        <class>models.ChargesEntity</class>
+        <class>models.HoasEntity</class>
+        <class>models.PaymentsEntity</class>
+        <class>models.ProvidersEntity</class>
+        <class>models.ResidentsEntity</class>
+        <class>models.RolesEntity</class>
+        <class>models.ServicesEntity</class>
+        <class>models.UsersEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:oracle:thin:@localhost:1521:orcl;shutdown=true"/>
+            <property name="hibernate.connection.driver_class" value="oracle.jdbc.OracleDriver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.Oracle10gDialect"/>
+            <!--<property name="hibernate.connection.username"/>
+            <property name="hibernate.connection.password"/>-->
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+            <property name="hibernate.transaction.jta.platform" value="org.hibernate.service.jta.platform.internal.SunOneJtaPlatform"/>
+            <property name="hibernate.temp.use_jdbc_metadata_defaults" value="false" />
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.enable_lazy_load_no_trans" value = "true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

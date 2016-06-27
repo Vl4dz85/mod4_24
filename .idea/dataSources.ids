@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Oracle - @localhost" uuid="b0b4e640-fcd0-4010-b619-f1f8a5553244">
+    <database-info product="Oracle" version="Oracle Database 11g Enterprise Edition Release 11.2.0.2.0 - Production&#xa;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="11.2" driver-name="Oracle JDBC driver" driver-version="11.2.0.2.0">
+      <extra-name-characters>$#</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="ORACLE" format-version="2.5">
+      <schema id="1" name="PAYMENT">
+        <object-id>361</object-id>
+        <created-timestamp>2016-06-19.05:00:15</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <introspection-timestamp>2016-06-24.13:46:03</introspection-timestamp>
+      </schema>
+      <sequence id="2" parent="1" name="HIBERNATE_SEQUENCE">
+        <object-id>115146</object-id>
+        <created-timestamp>2016-06-21.16:54:58</created-timestamp>
+        <modified-timestamp>2016-06-21.16:54:58</modified-timestamp>
+        <min-value>1</min-value>
+        <increment-by>1</increment-by>
+        <next-value>121</next-value>
+      </sequence>
+      <sequence id="3" parent="1" name="SERV_SEQ">
+        <object-id>115040</object-id>
+        <created-timestamp>2016-06-19.05:00:15</created-timestamp>
+        <modified-timestamp>2016-06-19.05:00:15</modified-timestamp>
+        <min-value>1</min-value>
+        <increment-by>50</increment-by>
+        <next-value>1001</next-value>
+      </sequence>
+      <table id="4" parent="1" name="ABONENTS">
+        <object-id>115156</object-id>
+        <comment>Àáîíåíò</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="5" parent="1" name="ADDRESSES">
+        <object-id>115150</object-id>
+        <comment>Àäðåñà ïðîïèñêè</comment>
+        <created-timestamp>2016-06-21.17:07:31</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="6" parent="1" name="CHARGES">
+        <object-id>115159</object-id>
+        <comment>Íà÷èñëåíèÿ</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="7" parent="1" name="HOAS">
+        <object-id>115148</object-id>
+        <comment>ÒÑÆ</comment>
+        <created-timestamp>2016-06-21.17:07:31</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:31</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="8" parent="1" name="PAYMENTS">
+        <object-id>115161</object-id>
+        <comment>Ïëàòåæè</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="9" parent="1" name="PROVIDERS">
+        <object-id>115152</object-id>
+        <comment>Ïîñòàâùèêè óñëóã</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="10" parent="1" name="RESIDENTS">
+        <object-id>115163</object-id>
+        <comment>Æèëüöû</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="11" parent="1" name="ROLES">
+        <object-id>115165</object-id>
+        <comment>Ðîëè</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="12" parent="1" name="SERVICES">
+        <object-id>115154</object-id>
+        <comment>Óñëóãà</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <table id="13" parent="1" name="USERS">
+        <object-id>115167</object-id>
+        <comment>Ïîëüçîâàòåëè</comment>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <organization>HEAP</organization>
+      </table>
+      <column id="14" parent="4" name="ABONENT_ID">
+        <comment>ID àáîíåíòà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="15" parent="4" name="SERVICE_ID">
+        <comment>ID óñëóãè</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="16" parent="4" name="ABONENT_ACCOUNT">
+        <comment>Ñ÷åò àáîíåíòà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(20)</data-type>
+      </column>
+      <column id="17" parent="4" name="ADDRESS_ID">
+        <comment>ID àäðåñà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <index id="18" parent="4" name="PK_ABONENTS_ABONENT_ID">
+        <object-id>115157</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ABONENT_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <index id="19" parent="4" name="UQ_ABONENTS_ABONENT_ACCOUNT">
+        <object-id>115158</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ABONENT_ACCOUNT</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="20" parent="4" name="PK_ABONENTS_ABONENT_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ABONENT_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_ABONENTS_ABONENT_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <key id="21" parent="4" name="UQ_ABONENTS_ABONENT_ACCOUNT">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ABONENT_ACCOUNT</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>UQ_ABONENTS_ABONENT_ACCOUNT</underlying-index>
+      </key>
+      <foreign-key id="22" parent="4" name="FK_ABONENTS_SERVICE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>SERVICE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.SERVICES.PK_SERVICES_SERVICE_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="23" parent="4" name="FK_ABONENTS_ADDRESS_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ADDRESS_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.ADDRESSES.PK_ADDRESSES_ADDRESS_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="24" parent="5" name="ADDRESS_ID">
+        <comment>ID àäðåñà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="25" parent="5" name="RESIDENT_CNT">
+        <comment>Êîë-âî ïðîæèâàþùèõ</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <column id="26" parent="5" name="REGISTERED_CNT">
+        <comment>Êîë-âî çàðåãèñòðèðîâàííûõ</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="27" parent="5" name="HOA_ID">
+        <comment>Id ÒÑÆ</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="28" parent="5" name="STREET">
+        <comment>Óëèöà</comment>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="29" parent="5" name="HOUSE">
+        <comment>Íîìåð äîìà</comment>
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <column id="30" parent="5" name="BUILDING">
+        <comment>Êîðïóñ</comment>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="31" parent="5" name="APARTMENT">
+        <comment>Êâàðòèðà</comment>
+        <data-type>NUMBER(5)</data-type>
+      </column>
+      <index id="32" parent="5" name="PK_ADDRESSES_ADDRESS_ID">
+        <object-id>115151</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ADDRESS_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="33" parent="5" name="PK_ADDRESSES_ADDRESS_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ADDRESS_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_ADDRESSES_ADDRESS_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="34" parent="5" name="FK_ADDRESSES_HOA_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>HOA_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.HOAS.PK_HOAS_HOA_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <check id="35" parent="5" name="NN_STREET_ADDRESSES">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>STREET</columns>
+        <predicate>&quot;STREET&quot; IS NOT NULL</predicate>
+      </check>
+      <check id="36" parent="5" name="CK_HOUSE_ADDRESSES">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>HOUSE</columns>
+        <predicate>house&gt;0</predicate>
+      </check>
+      <check id="37" parent="5" name="NN_HOUSE_ADDRESSES">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>HOUSE</columns>
+        <predicate>&quot;HOUSE&quot; IS NOT NULL</predicate>
+      </check>
+      <check id="38" parent="5" name="CK_APARTMENT_ADDRESSES">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>APARTMENT</columns>
+        <predicate>apartment&gt;0</predicate>
+      </check>
+      <column id="39" parent="6" name="CHARGE_ID">
+        <comment>Id íà÷èñëåíèÿ</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="40" parent="6" name="ABONENT_ID">
+        <comment>Id àáîíåíòà</comment>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="41" parent="6" name="CHARGE_AMOUNT">
+        <comment>Ñóììà íà÷èñëåíèÿ</comment>
+        <data-type>NUMBER(10,2)</data-type>
+      </column>
+      <column id="42" parent="6" name="PERIOD_BEGIN_DATE">
+        <comment>Äàòà íà÷àëà ïåðèîäà</comment>
+        <data-type>DATE</data-type>
+      </column>
+      <column id="43" parent="6" name="PERIOD_END_DATE">
+        <comment>Äàòà îêîí÷àíèÿ ïåðèîäà</comment>
+        <data-type>DATE</data-type>
+      </column>
+      <column id="44" parent="6" name="CHARGE_PAID">
+        <comment>Ïðèçíàê ïîëíîé îïëàòû(1/0)</comment>
+        <data-type>NUMBER(1)</data-type>
+      </column>
+      <index id="45" parent="6" name="PK_CHARGES_CHARGE_ID">
+        <object-id>115160</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>CHARGE_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="46" parent="6" name="PK_CHARGES_CHARGE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>CHARGE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_CHARGES_CHARGE_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="47" parent="6" name="FK_CHARGES_ABONENT_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ABONENT_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.ABONENTS.PK_ABONENTS_ABONENT_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <check id="48" parent="6" name="CHECK_CHARGE_PAID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>CHARGE_PAID</columns>
+        <predicate>CHARGE_PAID in (0,1)</predicate>
+      </check>
+      <column id="49" parent="7" name="HOA_ID">
+        <comment>ID ÒÑÆ</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="50" parent="7" name="HOA_NAME">
+        <comment>Íàçâàíèå ÒÑÆ</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="51" parent="7" name="HOA_ADDRESS">
+        <comment>Þðèäè÷åñêèé àäðåñ</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="52" parent="7" name="HOA_WEBSITE">
+        <comment>Ñàéò</comment>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="53" parent="7" name="HOA_PHONE">
+        <comment>Òåëåôîí</comment>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <index id="54" parent="7" name="PK_HOAS_HOA_ID">
+        <object-id>115149</object-id>
+        <created-timestamp>2016-06-21.17:07:31</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:31</modified-timestamp>
+        <columns>HOA_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="55" parent="7" name="PK_HOAS_HOA_ID">
+        <modified-timestamp>2016-06-21.17:07:31</modified-timestamp>
+        <columns>HOA_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_HOAS_HOA_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="56" parent="8" name="PAYMENT_ID">
+        <comment>ID ïëàòåæà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="57" parent="8" name="CHARGE_ID">
+        <comment>ID íà÷èñëåíèÿ</comment>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="58" parent="8" name="PAYMENT_AMOUNT">
+        <comment>Ôàêòè÷åñêàÿ ñóììà îïëàòû</comment>
+        <data-type>NUMBER(10,2)</data-type>
+      </column>
+      <index id="59" parent="8" name="PK_PAYMENTS_PAYMENT_ID">
+        <object-id>115162</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>PAYMENT_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="60" parent="8" name="PK_PAYMENTS_PAYMENT_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>PAYMENT_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_PAYMENTS_PAYMENT_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="61" parent="8" name="FK_PAYMENTS_CHARGE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>CHARGE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.CHARGES.PK_CHARGES_CHARGE_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="62" parent="9" name="PROVIDER_ID">
+        <comment>ID ïîñòàâùèêà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="63" parent="9" name="PROVIDER_NAME">
+        <comment>Íàçâàíèå</comment>
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <column id="64" parent="9" name="PROVIDER_ADDRESS">
+        <comment>Þðèäè÷åñêèé àäðåñ</comment>
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <index id="65" parent="9" name="PK_PROVIDERS_PROVIDER_ID">
+        <object-id>115153</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>PROVIDER_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="66" parent="9" name="PK_PROVIDERS_PROVIDER_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>PROVIDER_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_PROVIDERS_PROVIDER_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="67" parent="10" name="RESIDENT_ID">
+        <comment>ID æèëüöà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="68" parent="10" name="ADDRESS_ID">
+        <comment>ID àäðåñà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="69" parent="10" name="RESIDENT_NAME">
+        <comment>ÔÈÎ æèëüöà</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(50)</data-type>
+      </column>
+      <column id="70" parent="10" name="MAIN_OWNER">
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(1)</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <index id="71" parent="10" name="PK_RESIDENTS_RESIDENT_ID">
+        <object-id>115164</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>RESIDENT_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="72" parent="10" name="PK_RESIDENTS_RESIDENT_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>RESIDENT_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_RESIDENTS_RESIDENT_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="73" parent="10" name="FK_RESIDENTS_ADDRESS_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ADDRESS_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.ADDRESSES.PK_ADDRESSES_ADDRESS_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <check id="74" parent="10" name="CHK_MAIN_OWNER">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>MAIN_OWNER</columns>
+        <predicate>MAIN_OWNER in (0,1)</predicate>
+      </check>
+      <column id="75" parent="11" name="ROLE_ID">
+        <comment>Êîä ðîëè</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <column id="76" parent="11" name="ROLE_NAME">
+        <comment>Íàçâàíèå ðîëè</comment>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <index id="77" parent="11" name="PK_ROLES_ROLE_ID">
+        <object-id>115166</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ROLE_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="78" parent="11" name="PK_ROLES_ROLE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ROLE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_ROLES_ROLE_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="12" name="SERVICE_ID">
+        <comment>ID óñëóãè</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="80" parent="12" name="SERVICE_NAME">
+        <comment>Íàçâàíèå óñëóãè</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(255)</data-type>
+      </column>
+      <column id="81" parent="12" name="PROVIDER_ID">
+        <comment>ID ïîñòàâùèêà óñëóã</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="82" parent="12" name="IS_METER">
+        <comment>Óñòàíîâëåí ëè ñ÷åò÷èê (1 - Äà, 0 - íåò)</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(1)</data-type>
+        <default-expression>0</default-expression>
+      </column>
+      <index id="83" parent="12" name="PK_SERVICES_SERVICE_ID">
+        <object-id>115155</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>SERVICE_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="84" parent="12" name="PK_SERVICES_SERVICE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>SERVICE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_SERVICES_SERVICE_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="85" parent="12" name="FK_SERVICES_PROVIDER_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>PROVIDER_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.PROVIDERS.PK_PROVIDERS_PROVIDER_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <check id="86" parent="12" name="CK_SERVICES_METER">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>IS_METER</columns>
+        <predicate>IS_METER in (0,1)</predicate>
+      </check>
+      <column id="87" parent="13" name="USER_ID">
+        <comment>ID ïîëüçîâàòåëÿ</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <column id="88" parent="13" name="USER_PASSWORD">
+        <comment>Ïàðîëü ïîëüçîâàòåëÿ</comment>
+        <mandatory>1</mandatory>
+        <data-type>VARCHAR2(30)</data-type>
+      </column>
+      <column id="89" parent="13" name="ADDRESS_ID">
+        <comment>ID àäðåñà</comment>
+        <mandatory>1</mandatory>
+        <data-type>NUMBER(10)</data-type>
+      </column>
+      <column id="90" parent="13" name="ROLE_ID">
+        <comment>ID ðîëè</comment>
+        <data-type>VARCHAR2(20)</data-type>
+      </column>
+      <index id="91" parent="13" name="PK_USERS_USER_ID">
+        <object-id>115168</object-id>
+        <created-timestamp>2016-06-21.17:07:32</created-timestamp>
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>USER_ID</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+        <tablespace-name>USERS</tablespace-name>
+      </index>
+      <key id="92" parent="13" name="PK_USERS_USER_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>USER_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <underlying-index>PK_USERS_USER_ID</underlying-index>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="93" parent="13" name="FK_USERS_ADDRESS_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ADDRESS_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.ADDRESSES.PK_ADDRESSES_ADDRESS_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="94" parent="13" name="FK_USERS_ROLE_ID">
+        <modified-timestamp>2016-06-21.17:07:32</modified-timestamp>
+        <columns>ROLE_ID</columns>
+        <initially-deferred>1</initially-deferred>
+        <ref-key>~.ROLES.PK_ROLES_ROLE_ID</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>

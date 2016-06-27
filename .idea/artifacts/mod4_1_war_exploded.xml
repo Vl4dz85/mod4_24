@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mod4_1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mod4_1_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="mod4_24/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mod4_24" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jdbc-drivers" />
+          <element id="library" level="project" name="org.hibernate:hibernate-entitymanager:5.1.0.Final" />
+          <element id="library" level="project" name="JPA 2.1-2.1" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Oracle - @localhost" uuid="b0b4e640-fcd0-4010-b619-f1f8a5553244">
+      <secret-storage>master_key</secret-storage>
+      <user-name>payment</user-name>
+      <schema-pattern>*.PAYMENT</schema-pattern>
+      <default-schemas>*.PAYMENT *.PUBLIC</default-schemas>
+    </data-source>
+  </component>
+</project>
